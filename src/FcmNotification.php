@@ -151,7 +151,7 @@ class FcmNotification
         return $this->handleSend($encodedData);
     }
 
-    private function handleSend($encodedData)
+    protected function handleSend($encodedData)
     {
         $url = config('fcm_config.fcm_api_url');
 

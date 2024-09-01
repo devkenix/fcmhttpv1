@@ -114,7 +114,7 @@ class FcmNotification
         return $this->prepareSend();
     }
 
-    private function prepareSend()
+    protected function prepareSend()
     {
         if (isset($this->topic)) {
             $data = [
